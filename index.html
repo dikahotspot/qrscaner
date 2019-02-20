@@ -515,64 +515,7 @@ modal.style.display = "none";
 	    }
 	//-->
 	</script>
-	$(endif)
-
-<form class="vertical-form" name="login" action="$(link-login-only)" method="post"
-	$(if chap-id) onSubmit="return doLogin()" $(endif)>
-<input type="hidden" name="dst" value="$(link-orig)" />
-<input type="hidden" name="popup" value="true" />
-<div style="margin:0;padding:0;display:inline"></div>
-$(if error)
-<div class="alert alert-danger">$(error)</div>
-$(endif)
-
-
-<center><b><p style="color:#000080">Masukkan Kode Voucher Disini</style></b></p></center>
-<input autofocus name="username" type="text" value="" placeholder="Username" size="30" required="required" />
-<input autocomplete="off" name="password" type="password" label="false" placeholder="Password" size="30" required="required" />
-<input class="tombol" type="submit" value="MASUK" title="MASUK" />
-
-</form>
-
-<script type="text/javascript">
-<!--
-  document.login.username.focus();
-//-->
-</script>
-<script type="text/javascript">
-document.oncontextmenu = function(){return false;}
-</script>
-<br>
-
-<br><script> 
-var error = "$(error)"; 
-if (error == "user $(username) has reached uptime limit") { 
-window.location.href = "http://dikahotspot.com/expired.html";
-} else if (error == "user $(username) has reached traffic limit") {
-window.location.href = "http://dikahotspot.com/expired.html";
-} else if (error == "no more sessions are allowed for user $(username)") {
-window.location.href = "http://dikahotspot.com/expired.html";
-} else if (error == "session limit reached ($(error-orig))") {
-window.location.href = "http://dikahotspot.com/expired.html";
-} else if (error == "you are not logged in (ip $(ip))") {
-window.location.href = "http://dikahotspot.com/error.html";
-} else if (error == "invalid username ($(username)): this MAC address is not yours") {
-window.location.href = "http://dikahotspot.com/error.html";
-} else if (error == "invalid username or password") {
-window.location.href = "http://dikahotspot.com/error.html";
-} else if (error == "auth-in-progress = already authorizing, retry later") {
-window.location.href = "http://dikahotspot.com/error.html";
-} else { 
-document.write("$(error)"); 
-} 
-</script>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</div>
+	
 <div class="bawah">
 <br>
 <br>
