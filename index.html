@@ -441,14 +441,14 @@ function setimg()
 <div id="result"></div>
 </table>
 <span class="close"></span>
-<center><span style="font-weight:bold;font-size:12px; color:#999;">Jika Kamera Tidak Tampil.Browser tidak support Kamera. Klik "Coba DI Chrome".</span></center>
+<center><span style="font-weight:bold;font-size:10px; color:#999;">FOKUSKAN KAMERA Pada QR code di vouhcer</span></center>
 <div style="display: table;">
           <div style="display: table-row;">
-            <div style="display: table-cell; padding:3px;">
+            <div style="display: table-cell; padding:6px;">
               <div class="btn" id="reload" onclick="location.reload();">Reload Camera</div>
             </div>
-            <div style="display: table-cell; padding:3px;">
-              <div class="btn" onclick="document.location = 'googlechrome://navigate?url=http://dikahotspot.github.io/qrscaner';">Coba di Chrome</div>
+            <div style="display: table-cell; padding:6px;">
+              <div class="btn" onclick="document.location = 'googlechrome://navigate?url=https://dikahotspot.github.io/qrscaner/';">Coba di Chrome</div>
               <!--<div class="btn" onclick="openInChrome();">Coba di Chrome</div>-->
             </div>
           </div>
@@ -461,7 +461,7 @@ function setimg()
 <script type="text/javascript">load();</script>
 <script>
   function openInChrome(){
-  String url = "http://dikahotspot.github.io/qrscaner";
+  String url = "https://dikahotspot.github.io/qrscaner/";
     try {
         Intent i = new Intent("android.intent.action.MAIN");
         i.setComponent(ComponentName.unflattenFromString("com.android.chrome/com.android.chrome.Main"));
